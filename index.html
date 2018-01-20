@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+#background {
+	width: 1400px;
+    height: 800px;
+    background: white;
+    background: pink;
+    animation-name: bg;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+h1 {
+    color: red;
+    text-align: center;
+    border: 5px solid black;
+    background: linear-gradient(to bottom right, red, orange, yellow);
+    opacity: 0.5;
+    box-shadow: 5px 5px;
+}
+
+h2 {
+    color: gold;
+    text-align: center;
+    border: 5px solid black;
+    background: linear-gradient(to bottom right, yellow, green, blue);
+    opacity: 0.5;
+    box-shadow: 5px 5px;
+    margin: 20px 20px 70px;
+    font-size: 25px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    transition: width 2s;
+    margin-left: 25px;
+    box-shadow: 6px 6px grey;
+    text-shadow: 2px 2px 5px black;
+    font-size: 25px;
+    text-align: center;
+}
+
+#div1 {color: pink; background: red; transition-timing-function: linear;}
+#div2 {color: yellow; background: gold; transition-timing-function: linear;}
+#div3 {color: seaGreen; background: green; transition-timing-function: linear;}
+#div4 {color: skyBlue; background: blue; transition-timing-function: linear;}
+
+div:hover {
+    width: 150px;
+}
+  
+@keyframes bg {
+    from {background: pink}
+    to {background: skyBlue}
+}
+  
+text {
+    margin-left: 185px;
+    font-size: 20px;
+    width: 29em;
+    word-wrap: break-word;
+    float: left;
+  }
+  
+text:hover {
+    transform: rotateY(180deg);
+  }
+
+  
+#text1{color: pink;}
+#text2{color: yellow;}
+#text3{color: Aquamarine;}
+#text4{color: cyan;}  
+
+#maya {
+      size: 400px, 400px;
+      margin-top: -500px;
+      margin-left: 810px;
+      display: block;
+      border: 5px solid yellow;
+}
+
+
+mayaDesc {
+    color: black;
+    float: right;
+    padding-right: 250px;
+}
+  
+  
+</style>
+</head>
+<body>
+
+<div id="background"/div>
+<h1>List of Main Characters</h1>
+<h2>This website shows simple descriptions of four main characters (with an example picture) for an upcoming story I want to create one day. Title of story is undecided.</h2>
+<div id="div1">William Morozov</div> <text id="text1">A white-haired, red-eyed demon who possess a great amount of fighting strength. He comes of stoic and intimidating, but deep down he has a heart of gold.</text><br>
+<div id="div2">Maya Stoicheio</div> <text id="text2">A half-wolf-half-human creature with brown hair and yellow eyes. Her adventerous attuitude and encouragment always brings a smile to people's faces.</text><br>
+<div id="div3">Felice Occhiali</div> <text id="text3">Another demon with red hair and green eyes. His happy-go-lucky personality and determination makes him well-liked amoungst his friends and peers.</text><br>
+<div id="div4">Sapphire Austere</div> <text id="text4">A human with black and white hair and deep blue eyes. She is an exotic character, known for her steadfastness and impulsive behavior.</text><br>
+<img id="maya" src="maya.jpeg" width=500> <mayaDesc>A picture of Maya.</mayaDesc>
+
+
+</body>
+</html>
