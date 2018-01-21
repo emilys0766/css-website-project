@@ -2,7 +2,7 @@
 <html>
 <head>
 <style> 
-
+/* code for the background, which has an animation of changing from pink to blue for infinite amount of times*/
 #background {
 	width: 1400px;
     height: 800px;
@@ -13,7 +13,7 @@
     animation-iteration-count: infinite;
 }
 
-
+/* code used for title of website */
 h1 {
     color: red;
     text-align: center;
@@ -23,6 +23,8 @@ h1 {
     box-shadow: 5px 5px;
 }
 
+
+/* code used for description of website */
 h2 {
     color: gold;
     text-align: center;
@@ -34,6 +36,7 @@ h2 {
     font-size: 25px;
 }
 
+/* div { is used to create the boxes with the transition ease function*/
 div {
     width: 100px;
     height: 100px;
@@ -45,20 +48,25 @@ div {
     text-align: center;
 }
 
+/* This block of text is used to create multiple div { functions and make each text have it's own color */
 #div1 {color: pink; background: red; transition-timing-function: linear;}
 #div2 {color: yellow; background: gold; transition-timing-function: linear;}
 #div3 {color: seaGreen; background: green; transition-timing-function: linear;}
 #div4 {color: skyBlue; background: blue; transition-timing-function: linear;}
 
+/* div:hover makes the div { function move 150px to the right */
+
 div:hover {
     width: 150px;
 }
   
+/* animation used to change the color of the background on repeat */  
 @keyframes bg {
     from {background: pink}
     to {background: skyBlue}
 }
   
+/* text for the description */  
 text {
     margin-left: 185px;
     font-size: 20px;
@@ -67,16 +75,18 @@ text {
     float: left;
   }
   
+/* 2D animation for the description text */  
 text:hover {
     transform: rotateY(180deg);
   }
 
-  
+/* repeated text { functions for the descriptions of each character */  
 #text1{color: pink;}
 #text2{color: yellow;}
 #text3{color: Aquamarine;}
 #text4{color: cyan;}  
 
+/*code for picture of Maya on the right side of the website */
 #maya {
       size: 400px, 400px;
       margin-top: -500px;
@@ -96,6 +106,7 @@ mayaDesc {
 </style>
 </head>
 <body>
+
 
 <div id="background"/div>
 <h1>List of Main Characters</h1>
